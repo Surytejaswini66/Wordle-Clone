@@ -1,4 +1,5 @@
 import ThemeToggle from "./ThemeToggle";
+
 function Header() {
   return (
     <nav
@@ -6,9 +7,14 @@ function Header() {
       data-bs-theme="dark"
     >
       <div className="container-fluid">
-        <a className="navbar-brand text-light brand-logo" href="#">
+        <button
+          className="navbar-brand text-light brand-logo"
+          onClick={() => {
+            "#"; /* Add your logo click functionality here */
+          }}
+        >
           TAG Wordle
-        </a>
+        </button>
         <button
           className="navbar-toggler custom-toggler"
           type="button"
